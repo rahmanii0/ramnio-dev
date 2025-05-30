@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on ramnio.dev</title>
+    <link>http://localhost:1313/categories/general/</link>
+    <description>Recent content in General on ramnio.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 May 2025 07:17:49 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post One</title>
+      <link>http://localhost:1313/post-one/</link>
+      <pubDate>Sun, 25 May 2025 07:17:49 +0300</pubDate>
+      <guid>http://localhost:1313/post-one/</guid>
+      <description>&lt;h1 id=&#34;-introduction-to-react&#34;&gt;🚀 Introduction to React&lt;/h1&gt;&#xA;&lt;p&gt;React is one of the most popular JavaScript libraries for building user interfaces,&lt;br&gt;&#xA;particularly single-page applications (SPAs).&lt;/p&gt;&#xA;&lt;p&gt;It was developed by Facebook and has grown rapidly thanks to its component-based architecture&lt;br&gt;&#xA;and performance efficiency.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-why-use-react&#34;&gt;🔍 Why Use React?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Component-Based&lt;/strong&gt;: Build encapsulated components that manage their own state.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Virtual DOM&lt;/strong&gt;: Improves performance by minimizing direct DOM manipulation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reusable Logic&lt;/strong&gt;: Use hooks to manage logic across components.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Strong Ecosystem&lt;/strong&gt;: Works well with tools like Redux, React Router, and more.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-example-a-simple-react-component&#34;&gt;🛠️ Example: A Simple React Component&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Welcome&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;props&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Hello&lt;/span&gt;, {&lt;span style=&#34;color:#a6e22e&#34;&gt;props&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Post three</title>
+      <link>http://localhost:1313/post-three/</link>
+      <pubDate>Sun, 25 May 2025 07:17:49 +0300</pubDate>
+      <guid>http://localhost:1313/post-three/</guid>
+      <description>&lt;p&gt;Test content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post two</title>
+      <link>http://localhost:1313/post-two/</link>
+      <pubDate>Sun, 25 May 2025 07:17:49 +0300</pubDate>
+      <guid>http://localhost:1313/post-two/</guid>
+      <description>&lt;p&gt;Test content&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

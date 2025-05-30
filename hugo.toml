@@ -1,0 +1,5 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'ramnio.dev'
+[params]
+dateFormat = "Jan 2, 2006"

@@ -1,0 +1,18 @@
+
+
+
+{{ define "main" }}
+  <article class="single-post">
+
+    {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="post-header-image">
+    {{ end }}
+
+    <h1>{{ .Title }}</h1>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+  </article>
+{{ end }}

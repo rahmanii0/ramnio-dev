@@ -1,0 +1,140 @@
+{{ define "main" }}
+<style>
+  .travel-section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .travel-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .trip-card {
+    margin-bottom: 4rem;
+  }
+
+  .trip-gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .carousel img {
+    min-width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffffcc;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+
+  .trip-details {
+    margin-top: 1rem;
+  }
+
+  .trip-details h2 {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<div class="travel-section">
+  {{/*
+  <h1 class="travel-title">✈️ My Travel Highlights</h1>
+  */}}
+  <!-- ✨ Trip 1 -->
+  <div class="trip-card">
+    <div class="trip-gallery-wrapper">
+      <button class="prev-btn">❮</button>
+      <div class="trip-gallery carousel">
+        <img src="/images/ksa2/kas6.jpeg" alt="Trip 1" />
+        <img src="/images/ksa2/ksa1.jpeg" alt="Trip 1" />
+        <img src="/images/ksa2/ksa2.jpeg" alt="Trip 1" />
+        <img src="/images/ksa2/kas3.jpeg" alt="Trip 1" />
+      </div>
+      <button class="next-btn">❯</button>
+    </div>
+    <div class="trip-details">
+      <h2> Riyadh, Saudi Arabia</h2>
+      <p><strong>Date:</strong> OCT-2024</p>
+      <p></p>
+    </div>
+  </div>
+
+  <!-- ✨ Trip 2 -->
+  <div class="trip-card">
+    <div class="trip-gallery-wrapper">
+      <button class="prev-btn">❮</button>
+      <div class="trip-gallery carousel">
+        <img src="/images/oman1/o6.jpeg" alt="Trip 2" />
+        <img src="/images/oman1/o4.jpeg" alt="Trip 2" />
+        <img src="/images/oman1/o2.jpeg" alt="Trip 2" />
+        <img src="/images/oman1/o3.jpeg" alt="Trip 2" />
+        <img src="/images/oman1/o1.jpeg" alt="Trip 2" />
+      </div>
+      <button class="next-btn">❯</button>
+    </div>
+    <div class="trip-details">
+      <h2> Muscat , Oman</h2>
+      <p><strong>Date:</strong> NOV-2024</p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+
+  <!-- ✨ Trip 3 -->
+  
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".trip-gallery-wrapper").forEach((wrapper) => {
+      const carousel = wrapper.querySelector(".carousel");
+      const images = carousel.querySelectorAll("img");
+      const prevBtn = wrapper.querySelector(".prev-btn");
+      const nextBtn = wrapper.querySelector(".next-btn");
+
+      let index = 0;
+
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + images.length) % images.length;
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % images.length;
+        updateCarousel();
+      });
+    });
+  });
+</script>
+{{ end }}

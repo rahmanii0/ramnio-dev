@@ -1,0 +1,196 @@
+{{ define "main" }} {{ if eq .RelPermalink "/categories/"}} {{ range
+$.Site.Taxonomies.categories.ByCount }}
+<a href="/categories/{{ .Name }}">
+  # {{ .Name }} <small>({{.Count}})</small>
+</a>
+{{end}} {{ else }} {{/*
+<div class="me">
+  <div class="me-content">
+    <h2>Hello !</h2>
+    <p>
+      I'm Abdulrahman Mansour, a software engineer with a passion for building
+      scalable backend systems and clean frontends. With experience across .NET,
+      Laravel, and JavaScript frameworks, I've led and delivered impactful
+      projects for companies in Saudi Arabia, Oman, and Egypt.
+    </p>
+    <p>
+      I enjoy solving complex problems and mentoring teams to deliver
+      high-quality software. I'm currently based between Alexandria and Muscat,
+      contributing to startups and enterprises with full-stack development and
+      architecture design.
+    </p>
+  </div>
+  <img src="images/me1.jpeg" alt="Abdulrahman Mansour" class="me-img" />
+</div>
+*/}}
+<div class="bio-page">
+  <div class="bio-text">
+    <h1>Abdulrahman Mansour</h1>
+    <p>
+      Experienced Software Engineer with 5+ years of expertise in building
+      scalable, high-performance applications. Skilled in full-stack
+      development, optimizing system performance, collaborating in agile
+      environments to build innovative software that exceeds business objectives
+    </p>
+    <div style="margin-top: 1.5rem; font-weight: bold; color: aliceblue">
+      Skills:
+      <span style="margin-left: 0.5rem; font-weight: normal; color: aliceblue">
+        .NET | Laravel | Node.js | JavaScript | SQL | REST APIs
+      </span>
+    </div>
+  </div>
+
+  <div class="bio-image">
+    <img src="/images/me2.jpeg" alt="Abdulrahman" />
+  </div>
+</div>
+
+<!-- ✅ Roadmap Section -->
+<div class="roadmap">
+  <h2>Career Roadmap</h2>
+  <ul class="timeline">
+    <!-- Company 1 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/softexperts.png" alt="SoftExperts Logo" /> */}}
+      <div class="timeline-content">
+        <a href="https://softexpert.com" target="_blank"
+          ><strong
+            >SINDION – Riyadh, Saudi Arabia | Alexandria, Egypt</strong
+          ></a
+        >
+        <ul>
+          <li>Built Laravel-based admin dashboard.</li>
+          <li>Integrated JWT authentication system.</li>
+          <li>Managed multi-tenant restaurant structure.</li>
+        </ul>
+      </div>
+    </li>
+
+    <!-- Company 2 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/yumihub.png" alt="Yumi Hub Logo" /> */}}
+      <div class="timeline-content">
+        <a href="https://yumihub.com" target="_blank"
+          ><strong>VENGRESO – Remote (California, USA)</strong></a
+        >
+        <ul>
+          <li>Developed full-stack food ordering system.</li>
+          <li>Handled vendor dashboards and mobile APIs.</li>
+          <li>Implemented Saudi payment integrations.</li>
+        </ul>
+      </div>
+    </li>
+
+    <!-- Company 3 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/techvision.png" alt="TechVision Logo" /> */}}
+      <div class="timeline-content">
+        <a href="https://techvision.com" target="_blank"
+          ><strong>RMZ-TECH – Alexandria, Egypt. </strong></a
+        >
+        <ul>
+          <li>Built RESTful APIs with .NET Core.</li>
+          <li>Led backend architecture design.</li>
+          <li>Introduced CI/CD automation using GitHub Actions.</li>
+        </ul>
+      </div>
+    </li>
+
+    <!-- Company 4 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/innovatex.png" alt="InnovateX Logo" /> */}}
+      <div class="timeline-content">
+        <a href="https://innovatex.dev" target="_blank"
+          ><strong>SQUADIO – Remote (Alexandria, Egypt)</strong></a
+        >
+        <ul>
+          <li>Refactored legacy PHP code to Laravel.</li>
+          <li>Improved system performance by 40%.</li>
+          <li>Contributed to open-source tools.</li>
+        </ul>
+      </div>
+    </li>
+
+    <!-- Company 5 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/nf3.png" alt="NF3 Project" /> */}}
+      <div class="timeline-content">
+        <a href="https://nf3.gov.sa" target="_blank"
+          ><strong>BDAIAT – Alexandria, Egypt</strong></a
+        >
+        <ul>
+          <li>Led .NET + Angular development team.</li>
+          <li>Delivered secure, multi-role system for KSA entities.</li>
+          <li>Implemented roadmap, workflow & GIS modules.</li>
+        </ul>
+      </div>
+    </li>
+    <!-- Company 6 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/nf3.png" alt="NF3 Project" /> */}}
+      <div class="timeline-content">
+        <a href="https://nf3.gov.sa" target="_blank"
+          ><strong>TOPLINE – Remote (Cairo, Egypt)</strong></a
+        >
+        <ul>
+          <li>Led .NET + Angular development team.</li>
+          <li>Delivered secure, multi-role system for KSA entities.</li>
+          <li>Implemented roadmap, workflow & GIS modules.</li>
+        </ul>
+      </div>
+    </li>
+    <!-- Company 7 -->
+    
+  </ul>
+</div>
+<!-- ✅ Roadmap Section -->
+<div class="roadmap">
+  <h2>Acadmia </h2>
+  <ul class="timeline">
+    <!-- Company 1 -->
+    <li class="timeline-item">
+      {{/* <img src="/images/softexperts.png" alt="SoftExperts Logo" /> */}}
+      <div class="timeline-content">
+        <a href="https://softexpert.com" target="_blank"
+          ><strong
+            >2021 B. AGR-Engineering (Mechanical and Renewable Energy)
+            Capstone Project: Renewable Energy System Optimization Developed a Simulation Software.</strong
+          ></a
+        >
+      </div>
+    </li>
+
+</div>
+<h1 class="section-title">Last but not Least!</h1>
+
+
+<div class="card-list">
+  {{ range .Paginator.Pages }}
+  <div class="card">
+    <img
+      src="{{ .Params.image }}"
+      alt="{{ .Title }}"
+      class="card-img"
+      loading="lazy"
+    />
+
+    <div class="card-content">
+      <h2 class="card-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+
+      <p class="card-desc">{{ .Params.description }}</p>
+
+      <div class="card-meta">
+        <span>
+          {{ range (.GetTerms "authors") }}
+          <a href="{{ .Permalink }}">{{ .Name }}</a>
+          {{ end }}
+        </span>
+        <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+      </div>
+    </div>
+  </div>
+  {{ end }} {{ template "_internal/pagination.html" . }}
+</div>
+{{end}} {{ end }}
